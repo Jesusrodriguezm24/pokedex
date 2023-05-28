@@ -1,0 +1,58 @@
+.home_container{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    background: #E5E5E5;
+}
+.home_pekedex_img{
+    text-align: center;
+}
+.home_pekedex_img img{
+    width: 60%;
+}
+.home_pekedex_title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+
+    color: #FE1936;
+}
+.home_pekedex_text{
+  
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+
+    color: #302F2F;
+}
+.home_pokedex_start{
+  display: flex;
+
+}
+.home_pokedex_input_name{
+    font-size: 1rem;
+    width: 20rem;
+    height: 2.5rem;
+    border: none;
+
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+}
+.home_pokedex_btn_comenzar{
+    width: 10rem;
+    height: 2.5rem;
+    border: none;
+
+    background: #D93F3F;
+
+    font-weight: 400;
+    font-size: 1.1rem;
+
+    color: #FFFFFF;
+}
