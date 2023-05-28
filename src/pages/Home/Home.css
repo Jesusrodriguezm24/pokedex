@@ -24,10 +24,19 @@
     color: #FE1936;
 }
 .home_pekedex_text{
-  
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
 
     color: #302F2F;
+}
+.item_container{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+ 
+}
+.charmander{
+    width: 20%;
 }

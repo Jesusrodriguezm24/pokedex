@@ -1,7 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
-import Layout from "../components/Layout/Layout";
-import ProtectedRouter from "../components/ProtectedRouter/ProtectedRouter";
+import Layout from "../components/Common/Layout/Layout";
+import ProtectedRouter from "../components/Common/ProtectedRouter/ProtectedRouter";
 import Home from "../pages/Home/Home";
+import Pokedex from "../pages/Pokedex/Pokedex";
 
 export const router = createBrowserRouter([
     {
@@ -16,7 +17,7 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: "",
-                element: <h1>Lista de pokemons</h1>
+                element: <Pokedex/>
             },
             {
                 path: "/pokedex/:pokemonId",
