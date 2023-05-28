@@ -1,6 +1,21 @@
+import { useContext } from "react";
 import pokedexImg from "../../assets/img/pokedex.png";
+import UserNameForm from "../../components/Home/UserNameForm/UserNameForm";
+import { UserNameContext } from "../../context/UserNameContext";
+import { useNavigate } from "react-router-dom";
+
+
 import './Home.css';
 const Home = () => {
+
+  const navigate =  useNavigate();
+  const { seveUserName } = useContext(UserNameContext);
+
+  const handleSendName = (userNameValue) => {
+    seveUserName(userNameValue);
+    navigate('/pokedex');
+  }
+
   return (
     <section className="home_container">  
 
@@ -12,12 +27,7 @@ const Home = () => {
 
       <p className="home_pekedex_text">Please, in order to begin, give me your name...</p>
 
-      <form>
-        <div className="home_pokedex_start">
-          <input className="home_pokedex_input_name" type="text" placeholder=" Your name" />
-          <button className="home_pokedex_btn_comenzar">Comenzar</button>
-        </div>
-      </form>
+      <UserNameForm onSendName={handleSendName}/>
 
     </section>
     

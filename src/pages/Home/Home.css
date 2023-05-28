@@ -31,28 +31,3 @@
 
     color: #302F2F;
 }
-.home_pokedex_start{
-  display: flex;
-
-}
-.home_pokedex_input_name{
-    font-size: 1rem;
-    width: 20rem;
-    height: 2.5rem;
-    border: none;
-
-    background: #FFFFFF;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
-}
-.home_pokedex_btn_comenzar{
-    width: 10rem;
-    height: 2.5rem;
-    border: none;
-
-    background: #D93F3F;
-
-    font-weight: 400;
-    font-size: 1.1rem;
-
-    color: #FFFFFF;
-}
