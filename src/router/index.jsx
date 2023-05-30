@@ -17,13 +17,19 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: "",
-                element: <Pokedex/>
+                element: <Pokedex/>,
+                //loader: pokedexLoader(), 
             },
             {
                 path: "/pokedex/:pokemonId",
-                element: <h1>Detalles de los pokemons</h1>
+                element: <h1>Detalles de los pokemons</h1>,
             },
+           
         ]
+    },
+    {
+        path: "/config",
+        element: <h1>Ruta de config</h1>,
     },
     {
         path: "*",

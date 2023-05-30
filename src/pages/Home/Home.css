@@ -14,7 +14,7 @@
     text-align: center;
 }
 .home_pekedex_img img{
-    width: 60%;
+    width: 50%;
 }
 .home_pekedex_title{
     font-weight: 700;
@@ -38,5 +38,5 @@
  
 }
 .charmander{
-    width: 20%;
+    max-width: 15%;
 }
