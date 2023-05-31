@@ -1,20 +1,20 @@
-import { Form } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { getAllTypes } from '../../../services/getAllTypes';
 
 import './FiltersForm.css';
+import { Form } from 'react-router-dom';
 
-
-const FiltersForm = () => {
-    const [types, setTypes] = useState([])
-    const [pokemonNameValue, setPokemonNameValue] = useState('');
-    const [typeValue, setTypeValue] = useState('')
-
+const FiltersForm = ({ nameInitial, typeInitial }) => {
+    
+    const [types, setTypes] = useState([]);
+    const [pokemonNameValue, setPokemonNameValue] = useState('nameInitial');
+    const [typeValue, setTypeValue] = useState('typeInitial');
+    
     const handleChange = (e) => {
-        const newValue = e.target.value;
-
-        setPokemonNameValue(newValue);
+      //agregar controles del input 
+      setPokemonNameValue(e.target.value);
     }
+  
 
     const handleTypeChange = (e) => {
         const newTypeValue = e.target.value;
@@ -26,29 +26,24 @@ const FiltersForm = () => {
         const typesList = await getAllTypes();
         setTypes(typesList);
       }
-
       loadTypes();
-    }, [])
+    }, []);
 
     useEffect(() => {
-      
-    }, [])
+      setPokemonNameValue(nameInitial);
+      setTypeValue(typeInitial);
+    }, [nameInitial, typeInitial ])
 
-    useEffect(() => {
-      
-    }, [])
-    
-    
   return (
-
     <Form>
-
-        <h2>Filtros de busqueda</h2>
-        <div>
-            <input type="text" value={pokemonNameValue} onChange={handleChange} placeholder="Write the pokemon" name="pokemonName"></input>
-            <button>Buscar</button>
-
-            <select name="pokemonType" value={typeValue} placeholder='Alls pokemons' >
+        <div className='inputs_container'>
+            <div className='inputs_seach_btn'>
+                <input type="text" className='form_input_name' value={pokemonNameValue} onChange={handleChange} placeholder="Write the pokemon" name="pokemonName"></input>
+                <button className='form_btn_search'>Search</button>
+            </div>
+            
+            <select name="pokemonType" className='form_select_type' onChange={handleTypeChange} value={typeValue} >
+                <option value={''}>All</option>
                 { types.map(type => (
                     <option key={type.id} value={type.id}>{type.name}</option>
                 )) }

@@ -7,28 +7,21 @@ import { getAllPokemons } from '../../services/getAllPokemons';
 import './Pokedex.css'
 import PokemonList from '../../components/Pokedex/PokemonList/PokemonList';
 import { useLoaderData } from 'react-router-dom';
+import FiltersForm from '../../components/Pokedex/FiltersForm/FiltersForm';
 const Pokedex = () => {
    const { userName } = useContext(UserNameContext);
-   const [pokemons, setPokemons] = useState([]);
-    useLoaderData();
-
-   useEffect(() => {
-     const loadPokemons = async () => {
-        const pokemonsData = await getAllPokemons();
-        setPokemons(pokemonsData);
-     }
-
-     loadPokemons();
-   }, [])
+   const { pokemons, pokemonName, pokemonTypeId } = useLoaderData();
    
 
   return (
     <section className='pokedex_container'>
         <p className='pokedex_messege'>
-            <em className='pokedex_username'>Welcome {userName}...!</em>, here you can find your favorite pokemon
+            <em className='pokedex_username'>Welcome {userName}...!,</em> here you can find your favorite pokemon
         </p>
 
-        { !pokemons.length ? <p>No Hay pokemons</p> 
+        <FiltersForm nameInitial={pokemonName} typeInitial={pokemonTypeId}/> 
+        
+        { !pokemons.length ? <p>No pokemons</p> 
                            : <PokemonList pokemons={pokemons}/> }
     </section>
   )
