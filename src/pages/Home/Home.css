@@ -58,15 +58,15 @@
 
 }
 
-@media screen and (max-width: 576px) and (min-width: 380px) {
+@media screen and (max-width: 576px) and (min-width: 391px) {
     .home_pekedex_img img{
-        width: 28rem;
+        width: 21rem;
     }
     .home_pekedex_title{
-        font-size: 27px;
+        font-size: 25px;
     }
     .home_pekedex_text{
-        font-size: 16px;
+        font-size: 14px;
     }
     .charmander{
         max-width: 9.5rem;
@@ -91,7 +91,7 @@
  }
  @media screen and (max-width: 319px) and (min-width: 300px) {
     .home_pekedex_img img{
-        width: 15rem;
+        width: 17rem;
     }
     .home_pekedex_title{
         font-size: 20px;

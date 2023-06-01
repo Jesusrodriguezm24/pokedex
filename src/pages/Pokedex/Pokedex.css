@@ -1,18 +1,57 @@
 .pokedex_container{
-    margin-top: 7rem;
+    width: 100%;
+
+    margin-top: 6rem;
 }
 .pokedex_messege{
+    width: 100%;
+
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
 
     text-align: center;
 
-    padding: 1rem 2rem;
+    padding: 1rem;
     margin-bottom: 0.8rem;
 }
 .pokedex_username{
     font-weight: 700;
     font-style: normal;
     color: #fe1936;
+}
+
+@media screen and (max-width: 768px) and (min-width: 577px) {
+    .pokedex_messege{
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 25px;
+       
+        padding: 1rem;
+    }
+    .pokedex_username{
+        font-weight: 700;
+        color: #fe1936;
+    }
+}
+
+@media screen and (max-width: 576px) and (min-width: 391px) {
+    .pokedex_messege{
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 390px) and (min-width: 320px) {
+    .pokedex_messege{
+        font-size: 14px;
+        line-height: 20px;
+    }
+ }
+
+ @media screen and (max-width: 319px) and (min-width: 300px) {
+    .pokedex_messege{
+        font-size: 12px;
+        line-height: 18px;
+    }
 }

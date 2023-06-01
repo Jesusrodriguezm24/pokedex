@@ -16,7 +16,7 @@ const Layout = () => {
   }
 
   return (
-    <>
+    <section className="layout_container">
       <header>
         <LinesTopStyle /> 
         <button onClick={logout}>Log out</button>
@@ -27,7 +27,7 @@ const Layout = () => {
       <footer>
         <Footer/>
       </footer>
-    </>
+    </section>
   );
 };
 

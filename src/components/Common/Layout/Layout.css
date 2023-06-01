@@ -1,6 +1,10 @@
+.layout_container{
+    width: 100;
+}
 .main_container{
     width: 100%;
-    padding: 1rem 6rem;
+    
+    padding: 1rem 1rem;
 
     background-color:  #E5E5E5;
 }

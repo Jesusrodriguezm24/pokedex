@@ -7,7 +7,7 @@ const ProtectedRouter = ({ children }) => {
     const { userName } = useContext(UserNameContext);
     const location = useLocation();
   
-  if (userName) return <>{children}</>;
+  if (userName) return <section>{children}</section>;
   else return <Navigate to="/" state={{from: location.pathname + location.search}}/> ;
 }
 

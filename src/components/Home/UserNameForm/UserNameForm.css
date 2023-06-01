@@ -35,14 +35,14 @@
     }
   }
   
-  @media screen and (max-width: 576px) and (min-width: 380px) {
+  @media screen and (max-width: 576px) and (min-width: 391px) {
     .home_pokedex_input_name{  
-        width: 17rem;
-        height: 2.3rem;
+        width: 15rem;
+        height: 2.2rem;
     }
     .home_pokedex_btn_start{
-        width: 8rem;
-        height: 2.3rem;
+        width: 7rem;
+        height: 2.2rem;
     }
   }
   
