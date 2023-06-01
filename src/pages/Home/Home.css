@@ -14,7 +14,7 @@
     text-align: center;
 }
 .home_pekedex_img img{
-    width: 50%;
+    width: 40rem;
 }
 .home_pekedex_title{
     font-weight: 700;
@@ -38,5 +38,70 @@
  
 }
 .charmander{
-    max-width: 15%;
+    max-width: 11rem;
 }
+
+
+@media screen and (max-width: 768px) and (min-width: 577px) {
+    .home_pekedex_img img{
+        width: 35rem;
+    }
+    .home_pekedex_title{
+        font-size: 35px;
+    }
+    .home_pekedex_text{
+        font-size: 18px;
+    }
+    .charmander{
+        max-width: 10rem;
+    }
+
+}
+
+@media screen and (max-width: 576px) and (min-width: 380px) {
+    .home_pekedex_img img{
+        width: 28rem;
+    }
+    .home_pekedex_title{
+        font-size: 27px;
+    }
+    .home_pekedex_text{
+        font-size: 16px;
+    }
+    .charmander{
+        max-width: 9.5rem;
+    }
+}
+
+@media screen and (max-width: 390px) and (min-width: 320px) {
+    .home_pekedex_img img{
+        width: 20rem;
+    }
+    .home_pekedex_title{
+        font-size: 22px;
+        line-height: 40px;
+    }
+    .home_pekedex_text{
+        font-size: 14px;
+    }
+    .charmander{
+        max-width: 9.5rem;
+    }
+
+ }
+ @media screen and (max-width: 319px) and (min-width: 300px) {
+    .home_pekedex_img img{
+        width: 15rem;
+    }
+    .home_pekedex_title{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .home_pekedex_text{
+        font-size: 12px;
+    }
+    .charmander{
+        max-width: 9.5rem;
+    }
+
+ }

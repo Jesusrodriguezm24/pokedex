@@ -23,7 +23,7 @@ const Home = () => {
         <img src={pokedexImg} alt="" />
       </div>
 
-      <h1 className="home_pekedex_title">¡Hello trainer!</h1>
+      <h1 className="home_pekedex_title">¡Hi Trainer!</h1>
 
       <p className="home_pekedex_text">
         Please, in order to begin, give me your name...
