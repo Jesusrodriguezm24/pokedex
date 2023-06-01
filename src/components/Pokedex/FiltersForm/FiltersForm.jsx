@@ -9,10 +9,11 @@ const FiltersForm = ({ nameInitial, typeInitial }) => {
     const [types, setTypes] = useState([]);
     const [pokemonNameValue, setPokemonNameValue] = useState('nameInitial');
     const [typeValue, setTypeValue] = useState('typeInitial');
+
     
     const handleChange = (e) => {
-      //agregar controles del input 
       setPokemonNameValue(e.target.value);
+
     }
   
 
@@ -37,9 +38,10 @@ const FiltersForm = ({ nameInitial, typeInitial }) => {
   return (
     <Form>
         <div className='inputs_container'>
+              
             <div className='inputs_seach_btn'>
                 <input type="text" className='form_input_name' value={pokemonNameValue} onChange={handleChange} placeholder="Write the pokemon" name="pokemonName"></input>
-                <button className='form_btn_search'>Search</button>
+                
             </div>
             
             <select name="pokemonType" className='form_select_type' onChange={handleTypeChange} value={typeValue} >
@@ -48,7 +50,9 @@ const FiltersForm = ({ nameInitial, typeInitial }) => {
                     <option key={type.id} value={type.id}>{type.name}</option>
                 )) }
             </select>
-        </div>
+
+            <button className='form_btn_search'>Search</button>
+         </div>
         
     </Form>
   )

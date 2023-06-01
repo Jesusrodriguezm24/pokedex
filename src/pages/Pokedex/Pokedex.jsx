@@ -8,6 +8,7 @@ import './Pokedex.css'
 import PokemonList from '../../components/Pokedex/PokemonList/PokemonList';
 import { useLoaderData } from 'react-router-dom';
 import FiltersForm from '../../components/Pokedex/FiltersForm/FiltersForm';
+import LoadingPokemons from '../../components/LoadingPokemons/LoadingPokemons';
 const Pokedex = () => {
    const { userName } = useContext(UserNameContext);
    const { pokemons, pokemonName, pokemonTypeId } = useLoaderData();
@@ -21,7 +22,7 @@ const Pokedex = () => {
 
         <FiltersForm nameInitial={pokemonName} typeInitial={pokemonTypeId}/> 
         
-        { !pokemons.length ? <p>No pokemons</p> 
+        { !pokemons.length ?  <LoadingPokemons/> 
                            : <PokemonList pokemons={pokemons}/> }
     </section>
   )

@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import LinesTopStyle from "./LinesTopStyle/LinesTopStyle";
 import './Layout.css';
+import Footer from "../Footer/Footer";
 
 const Layout = () => {
   return (
@@ -11,6 +12,9 @@ const Layout = () => {
       <main className="main_container">
         <Outlet />
       </main>
+      <footer>
+        <Footer/>
+      </footer>
     </>
   );
 };
