@@ -1,5 +1,5 @@
 .pokemons_list_container{
-    margin-top: 2rem;
+    margin: 2.5rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -7,4 +7,8 @@
     gap: 1.5rem;
 
     list-style: none;
+}
+.link_list_container{
+    color: unset;
+    text-decoration: unset;
 }

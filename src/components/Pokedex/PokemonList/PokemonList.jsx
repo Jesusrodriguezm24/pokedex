@@ -21,7 +21,7 @@ const PokemonList = ({ pokemons }) => {
 
         <ul className='pokemons_list_container'>
             { pokemonsSlice.map((pokemon)=> <li key={pokemon.url}>
-                                            <Link to={`/pokedex/${pokemon.url.split("/").at(-2)}`}>
+                                            <Link className='link_list_container' to={`/pokedex/${pokemon.url.split("/").at(-2)}`}>
                                                <PokemonCard pokemonId={pokemon.url.split("/").at(-2)} /> 
                                             </Link>
                                             </li> )}

@@ -34,26 +34,23 @@ const PokemonCard = ({ pokemonId }) => {
                                     <section className='pokemon_card_types'>
                                         <h3>Type</h3>
                                         <ul className='types_container_list'>
-                                            {pokemon.types.map((type, i) => <li key={i} className='types_container_item'>{(<>{type} <p>/</p></>)}</li>)}
+                                            {pokemon.types.map((type, i) => <li key={i} className='types_container_item'>{type} </li>)}
                                         </ul>
                                     </section>
 
                                     <section className='pokemon_card_stats'>
                                         <ul>
                                             {stats.map((stat, i) => (
-                                                <li key={i}>
-                                                    <em>{stat.name.toUpperCase()}</em>
-                                                    <span>{stat.value}</span>
-                                                </li>
-
+                                                
+                                                    <li key={i}>
+                                                        <em>{stat.name.toUpperCase()}</em>
+                                                        <p>{stat.value}</p>
+                                                    </li>
                                             ))}
                                         </ul>
                                     </section>
                             </section>
                             )} 
-        
-        
-       
     </article>
   )
 }

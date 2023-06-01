@@ -1,0 +1,226 @@
+.pokemon_container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   flex-direction: column;
+}
+
+.pokemon_detail_container{
+
+    width: 90%;
+    height: 60rem;
+
+    margin-top: 20rem;
+
+    background: #FFFFFF;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 1rem;
+   
+}
+.dv_pokemon_img{
+    width: 100%;
+    height: 12rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+    border-radius: 10px 10px 0px 0px;
+}
+.dv_pokemon_img img{
+    width: 18rem;
+}
+.pokemon_data_name_id{
+
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.pokemon_data_name_id p{
+    border: 1px solid #23c1ae;
+    font-weight: 600;
+    font-size: 1.5rem;
+    
+    color: #416460;
+
+    padding: 5px;
+}
+.pokemon_data_name_id h2{
+   
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 3rem;
+
+    color: #416460;
+}
+.cls_weigth_height_container{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+}
+.cls_property{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.cls_property_name{
+    font-family: 'Roboto';
+    font-weight: 600;
+    line-height: 19px;
+      
+    color: #314643;
+}
+.cls_property_data{
+    padding-top: 0.2rem;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 29px;
+
+    color: #22226abe;
+}
+.cls_type_ability_container{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.cls_type,
+.cls_ability{
+    width: 50%;
+    text-align: center;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+  
+    color: #302F2F;
+}
+
+.cls_list{
+    list-style: none;
+
+    margin-top: 1rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cls_item_container{
+    width: 8rem;
+    height: 2rem;
+
+    border: 1px solid #416460;
+    background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+    border-radius: 2px;
+}
+
+.stats_container{
+    padding: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stats_container h2{
+    font-family: 'Roboto';
+    font-weight: 500;
+    line-height: 19px;
+    font-size: 2rem;
+      
+    color: #314643;
+}
+
+.cls_list_stats{
+    list-style: none;
+}
+
+.stats_item{
+    text-align: center;
+    margin-top: 1rem;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10rem;
+
+    width: 422px;
+    height: 34px;
+
+    background: linear-gradient(90deg, #facc57 -2.25%, #E6901E 133.18%);
+    border-radius: 15px;
+    padding: 0 1rem;
+}
+
+.moves_container{
+    margin-top: 2rem;
+    width: 90%;
+    height: 30rem auto;
+   
+    background: #FFFFFF;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 1rem;
+
+    margin-bottom: 5rem;
+}
+
+.movements_name{
+    padding: 2rem 5rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+ 
+    color: #302F2F;
+}
+
+.dv_movement_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cls_list_movements{
+    width: 90%;
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.move_item{
+    background-color: #E5E5E5;
+    padding: 1rem;
+
+    font-size: 12px;
+
+    border-radius: 25px;
+}
