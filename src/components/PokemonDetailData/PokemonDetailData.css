@@ -229,8 +229,8 @@
     top: 7rem;
     left: 4rem;
 
-    width: 4rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
 
     border-radius: 50%;
     font-size: 1.2rem;
@@ -240,4 +240,9 @@
     color: white;
 
     cursor: pointer;
+}
+
+.btn_back_pokedex:hover{
+    color: white;
+    background-color: rgba(48, 48, 236, 0.854);
 }

@@ -2,7 +2,7 @@ import { useContext } from "react";
 import pokedexImg from "../../assets/img/pokedex.png";
 import UserNameForm from "../../components/Home/UserNameForm/UserNameForm";
 import { UserNameContext } from "../../context/UserNameContext";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import charmander from "../../assets/gif/charmander.gif";
 
 import "./Home.css";
@@ -10,10 +10,11 @@ import LineStyle from "../../components/Home/LineStyle/LineStyle";
 const Home = () => {
   const navigate = useNavigate();
   const { seveUserName } = useContext(UserNameContext);
+  const location = useLocation();
 
   const handleSendName = (userNameValue) => {
     seveUserName(userNameValue);
-    navigate("/pokedex");
+    navigate(location.state?.from ?? '/pokedex');
   };
 
   return (

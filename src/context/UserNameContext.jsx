@@ -4,11 +4,17 @@ export const UserNameContext = createContext(null);
 
 export const UserNameProvider = ({ children }) => {
 
-    const [userName, setUserName] = useState('');
+    const [userName, setUserName] = useState(localStorage.getItem('userName') ?? '');
+ 
+    const seveUserName = (newUserName) => {
+        setUserName(newUserName);
+        localStorage.setItem('userName', newUserName);
+    }
 
-    const seveUserName = (newUserName) => setUserName(newUserName);
-
-    const removeUserName = () => setUserName('');
+    const removeUserName = () => {
+        setUserName('');
+        localStorage.removeItem('userName');
+    }
    
 return (
     <UserNameContext.Provider value={{ userName, seveUserName, removeUserName }}>
