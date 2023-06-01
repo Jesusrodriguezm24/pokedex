@@ -5,6 +5,7 @@ import Home from "../pages/Home/Home";
 import Pokedex from "../pages/Pokedex/Pokedex";
 import { pokedexLoader } from "./loaders/pokedexLoader";
 import PokemonDetails from "../pages/PokemonDetails/PokemonDetails";
+import PageNotFound from "../components/PageNotFound/PageNotFound";
 
 export const router = createBrowserRouter([
     {
@@ -35,7 +36,7 @@ export const router = createBrowserRouter([
     },
     {
         path: "*",
-        element: <h1>EROR 404 - Page Not Found...</h1>
+        element: <PageNotFound/>
     }
 
 

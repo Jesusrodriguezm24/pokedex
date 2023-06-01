@@ -24,11 +24,11 @@
 .circule_out{
     position: absolute;
   
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
 
     background: #FFFFFF;
-    border: 12px solid #000000;
+    border: 9px solid #000000;
     border-radius: 50%;
 
     display: flex;
@@ -36,10 +36,10 @@
     align-items: center;
 }
 .circule_in{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 
-    background: #212121;
-    border: 12px solid #000000;
+    background: #DD1A1A;
+    border: 8px solid #000000;
     border-radius: 50%;
 }

@@ -24,7 +24,6 @@ const UserNameForm = ({ onSendName }) => {
   
    };
 
-
   return (
       <form onSubmit={handleSubmit}>
           { Boolean(nameError) && <p style={{color:"red"}}>{nameError}</p> }

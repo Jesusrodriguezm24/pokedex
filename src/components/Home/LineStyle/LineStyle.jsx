@@ -4,7 +4,6 @@ const LineStyle = () => {
   return (
     <section className='line_container'>
         <div className='line_red'>
-
         </div>
 
         <div className='circule_out'>
