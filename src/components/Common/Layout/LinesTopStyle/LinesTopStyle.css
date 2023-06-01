@@ -50,3 +50,21 @@
     border: 10px solid #000000;
     border-radius: 50%;
 }
+.btn_go_home{
+    position: absolute;
+    top: 0.5rem;
+    right: 1.5rem;
+
+    width: 3.5rem;
+    height: 3.5rem;
+
+    font-weight: bold;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+.btn_go_home:hover{
+    color: white;
+    background-color: rgba(48, 48, 236, 0.854);
+}

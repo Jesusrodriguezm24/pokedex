@@ -47,7 +47,7 @@
     font-size: 1.5rem;
     
     color: #416460;
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 5px;
 }
 .pokemon_data_name_id h2{
@@ -223,4 +223,21 @@
     font-size: 12px;
 
     border-radius: 25px;
+}
+.btn_back_pokedex{
+    position: absolute;
+    top: 7rem;
+    left: 4rem;
+
+    width: 4rem;
+    height: 4rem;
+
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    background-color: rgba(237, 54, 54, 0.84);
+    color: white;
+
+    cursor: pointer;
 }

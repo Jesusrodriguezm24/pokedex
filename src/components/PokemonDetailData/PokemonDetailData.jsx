@@ -1,9 +1,17 @@
+import { Link } from 'react-router-dom';
 import './PokemonDetailData.css';
 
 
 const PokemonDetailData = ({ pokemon }) => {
   return (
     <section className='pokemon_container'>
+       
+           <Link to="/pokedex">
+                <button className='btn_back_pokedex'>
+                    Back 
+                </button>
+           </Link>
+        
        <section className='pokemon_detail_container'>
             <div className='dv_pokemon_img'>
                 <img src={pokemon.image} alt="pokemon img" />
