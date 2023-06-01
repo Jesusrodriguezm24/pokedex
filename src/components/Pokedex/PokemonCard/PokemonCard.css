@@ -37,6 +37,14 @@
     font-size: 1.3rem;
 
     color: rgba(170, 56, 56, 0.873);
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+
+    color: #774234;
 }
 h2{
     text-decoration: none;
