@@ -11,7 +11,7 @@
     width: 90%;
     height: 60rem;
 
-    margin-top: 12rem;
+    margin-top: 9rem;
 
     background: #FFFFFF;
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
@@ -186,7 +186,7 @@
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
     border-radius: 1rem;
 
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 .movements_name{
@@ -226,8 +226,8 @@
 }
 .btn_back_pokedex{
     position: absolute;
-    top: 7rem;
-    left: 4rem;
+    top: 6rem;
+    left: 3rem;
 
     width: 3.5rem;
     height: 3.5rem;
@@ -246,3 +246,308 @@
     color: white;
     background-color: rgba(48, 48, 236, 0.854);
 }
+  
+@media screen and (max-width: 576px) and (min-width: 391px) {
+    
+     .pokemon_detail_container{
+     
+         width: 98%;
+         height: 55rem;
+     
+         margin-top: 6rem;   
+     }
+     .dv_pokemon_img img{
+
+         width: 15rem;
+     }
+     .pokemon_data_name_id{
+
+         margin-top: 2rem;
+     }
+     .pokemon_data_name_id p{
+
+         font-size: 1.3rem;
+     }
+     .pokemon_data_name_id h2{
+
+         font-size: 40px;
+         line-height: 3rem;
+     }
+     .cls_weigth_height_container{
+         padding-top: 0.5rem;
+
+         gap: 2rem;
+     }
+     .cls_property_name{
+
+         line-height: 16px;
+     }
+     .cls_property_data{
+
+         line-height: 25px;
+     }
+    
+     .cls_list{
+         margin-top: 0.5rem;
+
+         gap: 0.5rem;
+     }
+     .cls_item_container{
+         width: 8rem;
+         height: 1.8rem;
+     }
+
+     .stats_container{
+         padding: 2rem;
+
+     }
+
+     .stats_item{
+
+        gap: 1rem;
+    
+        width: 18rem;
+        height: 34px;
+    }
+
+     .moves_container{
+         margin-top: 1rem;
+         width: 98%;
+         height: 20rem auto;
+       
+         margin-bottom: 2rem;
+     }
+     
+     .movements_name{
+         padding: 1rem 2rem;
+    
+         font-size: 2.2rem;
+         line-height: 40px;
+
+     }
+
+     .cls_list_movements{
+         width: 95%;
+
+         gap: 0.3rem;
+     }
+     
+     .move_item{
+         background-color: #E5E5E5;
+         padding: 0.7rem;
+
+     }
+     .btn_back_pokedex{
+         top: 4.8rem;
+         left: 1rem;
+     
+         width: 3rem;
+         height: 3rem;
+     
+         font-size: 1rem;
+     }
+
+  }
+  
+  @media screen and (max-width: 390px) and (min-width: 320px) {
+    
+    .pokemon_detail_container{
+        width: 98%;
+        height: 55rem;
+    
+        margin-top: 6rem;   
+    }
+    .dv_pokemon_img img{
+
+        width: 15rem;
+    }
+    .pokemon_data_name_id{
+
+        margin-top: 2rem;
+    }
+    .pokemon_data_name_id p{
+
+        font-size: 1.3rem;
+    }
+    .pokemon_data_name_id h2{
+
+        font-size: 40px;
+        line-height: 3rem;
+    }
+    .cls_weigth_height_container{
+        padding-top: 0.5rem;
+
+        gap: 2rem;
+    }
+    .cls_property_name{
+
+        line-height: 16px;
+    }
+    .cls_property_data{
+
+        line-height: 25px;
+    }
+   
+    .cls_list{
+        margin-top: 0.5rem;
+
+        gap: 0.5rem;
+    }
+    .cls_item_container{
+        width: 8rem;
+        height: 1.8rem;
+    }
+
+    .stats_container{
+        padding: 2rem;
+
+    }
+
+    .stats_item{
+
+       gap: 1rem;
+   
+       width: 18rem;
+       height: 34px;
+   }
+
+    .moves_container{
+        margin-top: 1rem;
+        width: 98%;
+        height: 20rem auto;
+      
+        margin-bottom: 2rem;
+    }
+    
+    .movements_name{
+        padding: 1rem 2rem;
+   
+        font-size: 2.2rem;
+        line-height: 40px;
+
+    }
+
+    .cls_list_movements{
+        width: 95%;
+
+        gap: 0.3rem;
+    }
+    
+    .move_item{
+        background-color: #E5E5E5;
+        padding: 0.7rem;
+
+    }
+    .btn_back_pokedex{
+        top: 4.5rem;
+        left: 1rem;
+    
+        width: 3rem;
+        height: 3rem;
+    
+        font-size: 1rem;
+    }
+  
+   }
+  
+   @media screen and (max-width: 319px) and (min-width: 300px) {
+  
+    .pokemon_detail_container{
+     
+        width: 99%;
+        height: 50rem;
+    
+        margin-top: 6rem;   
+    }
+    .dv_pokemon_img img{
+
+        width: 13.5rem;
+    }
+    .pokemon_data_name_id{
+
+        margin-top: 0.8rem;
+    }
+    .pokemon_data_name_id p{
+
+        font-size: 1rem;
+    }
+    .pokemon_data_name_id h2{
+
+        font-size: 35px;
+        line-height: 2.5rem;
+    }
+    .cls_weigth_height_container{
+        padding-top: 0.3rem;
+
+        gap: 1rem;
+    }
+    .cls_property_name{
+
+        line-height: 14px;
+    }
+    .cls_property_data{
+
+        line-height: 20px;
+    }
+   
+    .cls_list{
+        margin-top: 0.3rem;
+
+        gap: 0.3rem;
+    }
+    .cls_item_container{
+        width: 6rem;
+        height: 1.6rem;
+
+        font-size: 1rem;
+    }
+
+    .stats_container{
+        padding: 1.5rem;
+
+    }
+
+    .stats_item{
+
+       gap: 0.8rem;
+   
+       width: 14rem;
+       height: 2rem;
+   }
+
+    .moves_container{
+        margin-top: 0.8rem;
+        width: 99%;
+        height: 18rem auto;
+      
+        margin-bottom: 2rem;
+    }
+    
+    .movements_name{
+        padding: 1rem 2rem;
+   
+        font-size: 2rem;
+        line-height: 30px;
+    }
+
+    .cls_list_movements{
+        width: 95%;
+
+        gap: 0.3rem;
+    }
+    
+    .move_item{
+        background-color: #E5E5E5;
+        padding: 0.7rem;
+
+    }
+    .btn_back_pokedex{
+        top: 4.5rem;
+        left: 1rem;
+    
+        width: 3rem;
+        height: 3rem;
+    
+        font-size: 1rem;
+    }
+  }
