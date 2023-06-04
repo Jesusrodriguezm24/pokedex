@@ -8,7 +8,7 @@ const Footer = () => {
                 <p>Create By Jesús Rodriguez</p>
                 <i className='bx bx-registered'></i>
               </section>
-          
+{/*           
               <section className="contact_container">
           
                 <div className="contact_icons">
@@ -29,7 +29,7 @@ const Footer = () => {
                   </a>
                 </div>
 
-              </section>
+              </section> */}
           </div>
     </footer>
   )
