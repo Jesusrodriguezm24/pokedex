@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import pokedexImg from "../../../../assets/img/pokedex.png";
 import { useContext } from "react";
 import { UserNameContext } from "../../../../context/UserNameContext";
@@ -17,8 +17,13 @@ const LinesTopStyle = () => {
   return (
     <section className='line_container_top'>
         <div className='line_red_top'>
-            <img src={pokedexImg} alt="" />
-            <button className="btn_go_home" onClick={logout}>Log out</button>
+            <Link to="/pokedex">
+              <img src={pokedexImg} alt="" />
+            </Link>
+            <button className="btn_go_home" onClick={logout}>
+              {/* <i className='bx bx-log-out'></i> */}
+               Log out
+            </button>
         </div>
 
         <div className='circule_out_top'>

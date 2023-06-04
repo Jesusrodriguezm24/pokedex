@@ -1,3 +1,6 @@
+.loading_container{
+  height: 100% ;
+}
 .wheel-and-hamster {
     --dur: 1s;
     position: relative;
@@ -26,7 +29,7 @@
     background: radial-gradient(100% 100% at center,hsla(0,0%,60%,0) 47.8%,hsl(0,0%,60%) 48%);
     z-index: 2;
   }
-  
+
   .hamster {
     animation: hamster var(--dur) ease-in-out infinite;
     top: 50%;

@@ -47,7 +47,7 @@
     height: 40px;
 
     background: #DD1A1A;
-    border: 10px solid #000000;
+    border: 6px solid #000000;
     border-radius: 50%;
 }
 .btn_go_home{
@@ -101,7 +101,7 @@
         height: 30px;
     
         background: #DD1A1A;
-        border: 5.5px solid #000000;
+        border: 5px solid #000000;
     }
     .btn_go_home{
 

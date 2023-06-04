@@ -7,11 +7,12 @@
     gap: 1.5rem;
 
     list-style: none;
+
 }
 .link_list_container{
     color: unset;
     text-decoration: unset;
 }
 .space_footer{
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }

@@ -22,7 +22,11 @@ const Pokedex = () => {
 
         <FiltersForm nameInitial={pokemonName} typeInitial={pokemonTypeId}/> 
         
-        { !pokemons.length ?  <LoadingPokemons/> 
+        { !pokemons.length ?  (<section className='no_pokemons_container'>
+                                <LoadingPokemons/> 
+                                <h2>No Pokemons</h2>
+                              </section>
+                                ) 
                            : <PokemonList pokemons={pokemons}/> }
     </section>
   )
